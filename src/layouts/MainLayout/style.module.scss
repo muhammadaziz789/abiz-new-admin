@@ -1,0 +1,11 @@
+.layout {
+  display: flex;
+  padding: 24px;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+  overflow: auto;
+  padding-left: $xl2;
+}
