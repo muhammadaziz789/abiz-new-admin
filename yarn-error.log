@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/muhammadaziz/.nvm/versions/node/v20.0.0/bin/node /Users/muhammadaziz/.nvm/versions/node/v20.0.0/bin/yarn add date-fns
+  /Users/muhammadaziz/.nvm/versions/node/v20.0.0/bin/node /Users/muhammadaziz/.nvm/versions/node/v20.0.0/bin/yarn add mobx mobx-react
 
 PATH: 
   /Users/muhammadaziz/.nvm/versions/node/v20.0.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/muhammadaziz/.nvm/versions/node/v20.0.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin
@@ -36,10 +36,13 @@ npm manifest:
     "dependencies": {
       "@emotion/react": "^11.11.1",
       "@emotion/styled": "^11.11.0",
+      "@iconify/icons-eva": "^1.2.6",
+      "@iconify/react": "^4.1.1",
       "@mui/material": "^5.14.6",
       "@mui/styles": "^5.14.6",
       "@mui/x-date-pickers": "^6.11.2",
       "autoprefixer": "^10.4.15",
+      "date-fns": "^2.30.0",
       "lodash": "^4.17.21",
       "postcss": "^8.4.28",
       "react": "^18.2.0",
@@ -251,7 +254,7 @@ Lockfile:
     dependencies:
       "@babel/helper-plugin-utils" "^7.22.5"
   
-  "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.22.10", "@babel/runtime@^7.22.6", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7":
+  "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.10", "@babel/runtime@^7.22.6", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7":
     version "7.22.11"
     resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.11.tgz#7a9ba3bbe406ad6f9e8dd4da2ece453eb23a77a4"
     integrity sha512-ee7jVNlWN09+KftVOu9n7S8gQzD/Z6hN/I8VBRXW4P1+Xe7kJGXMwu8vds4aGIMHZnNbdpSWCfZZtinytpcAvA==
@@ -586,6 +589,25 @@ Lockfile:
     version "1.2.1"
     resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
     integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
+  
+  "@iconify/icons-eva@^1.2.6":
+    version "1.2.6"
+    resolved "https://registry.yarnpkg.com/@iconify/icons-eva/-/icons-eva-1.2.6.tgz#4eabdd7e41d5e97cf999a3ea477e48056652d143"
+    integrity sha512-Qo5GWzKNj7QDLh2IHlzfF4s1VjX2ZcA4ZtDHjD234f3Gn8u42OSRYM7w/gUab+NjgY7ViU0Hz5IPkVpz+HCGaQ==
+    dependencies:
+      "@iconify/types" "*"
+  
+  "@iconify/react@^4.1.1":
+    version "4.1.1"
+    resolved "https://registry.yarnpkg.com/@iconify/react/-/react-4.1.1.tgz#da1bf03cdca9427f07cf22cf5b63fa8f02db4722"
+    integrity sha512-jed14EjvKjee8mc0eoscGxlg7mSQRkwQG3iX3cPBCO7UlOjz0DtlvTqxqEcHUJGh+z1VJ31Yhu5B9PxfO0zbdg==
+    dependencies:
+      "@iconify/types" "^2.0.0"
+  
+  "@iconify/types@*", "@iconify/types@^2.0.0":
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
+    integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
   
   "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
     version "0.3.3"
@@ -1179,6 +1201,13 @@ Lockfile:
     version "3.1.2"
     resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz"
     integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
+  
+  date-fns@^2.30.0:
+    version "2.30.0"
+    resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.30.0.tgz#f367e644839ff57894ec6ac480de40cae4b0f4d0"
+    integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
+    dependencies:
+      "@babel/runtime" "^7.21.0"
   
   debug@^4.1.0, debug@^4.1.1, debug@^4.3.2:
     version "4.3.4"

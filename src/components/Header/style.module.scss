@@ -1,15 +1,17 @@
 .header {
     background-color: $blackLayer;
     border-radius: $lg;
-    padding: $xl2;
+    padding: 0 $xl2;
     display: flex;
     align-items: center;
     column-gap: 20px;
+    height: 77px;
 
     .title {
         font-size: 24px;
         font-weight: 500;
-        margin-right: 10px;
+        width: 230px;
+        overflow: hidden;
     }
 }
 

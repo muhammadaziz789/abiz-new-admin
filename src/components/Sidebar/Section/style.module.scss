@@ -1,0 +1,31 @@
+.section {
+  .title {
+    padding: $paddingBlock $paddingBlock 20px $paddingBlock;
+    color: $lightGraySecodry;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .menu {
+    &__link {
+      padding: 0 $paddingBlock;
+      color: $gray;
+      display: flex;
+      align-items: center;
+      column-gap: 14px;
+      height: 44px;
+
+      &:hover {
+        background-color: $blackCommon;
+      }
+
+      &:last-child {
+        margin-bottom: 6px;
+      }
+    }
+    .active {
+      color: #fff;
+      background-color: red;
+    }
+  }
+}

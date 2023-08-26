@@ -1,15 +1,23 @@
 import { Outlet } from "react-router-dom";
 import { Sidebar } from "../../components/Sidebar";
 import { Header } from "../../components/Header";
-import styles from "./style.module.scss";
+import cls from "./style.module.scss";
+import { useState } from "react";
 
 const MainLayout = () => {
+  const [state, setState] = useState({
+    isAnimating: false,
+    key: 0,
+  });
+
   return (
-    <div className={styles.layout}>
+    <div className={cls.layout}>
       <Sidebar />
-      <div className={styles.content}>
+      <div className={cls.content}>
         <Header />
         <Outlet />
+
+        {/* <MainSkeleton /> */}
       </div>
     </div>
   );

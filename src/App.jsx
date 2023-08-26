@@ -6,8 +6,8 @@ import { QueryClientProvider } from "react-query";
 import queryClient from "./services/queryClient";
 import AlertProvider from "./providers/AlertProvider";
 import { ThemeProvider } from "@mui/material/styles";
-import Button from "@mui/material/Button";
 import { themeMui } from "./theme";
+import "./i18next";
 
 function App() {
   return (

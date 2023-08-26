@@ -1,4 +1,4 @@
-import { SearchIcon } from "../../../IconPicker/svg";
+import { SearchIcon } from "../../../IconGenerator/Svg";
 
 const CSearchInput = () => {
   return (

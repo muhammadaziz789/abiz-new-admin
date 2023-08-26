@@ -1,9 +1,3 @@
-.alignCenterJustifyBetween {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .drag-handler-btn {
   cursor: move; /* fallback if grab cursor is unsupported */
   cursor: grab;
@@ -22,3 +16,4 @@
   display: flex;
   column-gap: 20px;
 }
+
